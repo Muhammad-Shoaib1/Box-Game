@@ -1,0 +1,105 @@
+body {
+  font-family: 'Cursive', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 95%;
+  overflow: hidden;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.2em;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-card {
+  cursor: pointer;
+  color: white;
+  width: 100px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 36px;
+  background-color: black;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.new-card:hover {
+  transform: scale(1.1);
+  background-color: #333;
+}
+
+.card {
+  width: 60px;
+  height: 60px;
+  background-color: #ff69b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 36px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.2) rotate(360deg);
+  background-color: #ff1493;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #666;
+}
